@@ -1,0 +1,32 @@
+/* Ensure the image fits the card size */
+.card-image {
+    height: 0;
+    padding-bottom: 75%; /* Maintain 4:3 aspect ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire card without distortion */
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-title {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.filter-studio {
+    flex: 0 0 auto;
+}

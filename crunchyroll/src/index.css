@@ -1,0 +1,26 @@
+.horizontal-scroll {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.horizontal-scroll .columns {
+    flex-wrap: nowrap;
+}
+
+.horizontal-scroll .column {
+    flex: 0 0 auto;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire card without distortion */
+}
+
+.watched-episode {
+    opacity: 0.5;
+}
+.column.is-3-desktop, .column.is-4-tablet, .column.is-6-mobile {
+    flex: 0 0 auto;
+}
